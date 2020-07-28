@@ -132,6 +132,7 @@ call s:hi('LineNr', s:palette.gray04, s:palette.black, 'none')
 call s:hi('FoldColumn', s:palette.gray07, s:palette.black, 'none')
 call s:hi('CursorLine', [], s:palette.gray01, 'none')
 call s:hi('CursorLineNr', s:palette.gray14, s:palette.black, 'none')
+call s:hi('ColorColumn', s:palette.white, s:palette.gray01, 'none')
 
 call s:hi('Visual', s:palette.black, s:palette.gray06, '')
 call s:hi('Search', s:palette.gray01, s:palette.gray11, 'none')
@@ -179,7 +180,6 @@ highlight! link Float Number
 highlight! link Boolean Number
 
 highlight! link SignColumn FoldColumn
-highlight! link ColorColumn FoldColumn
 highlight! link CursorColumn CursorLine
 
 highlight! link Folded LineNr
