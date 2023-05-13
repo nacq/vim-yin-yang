@@ -125,10 +125,11 @@ else
     call s:hi('Comment', s:palette.gray12, [], '')
 endif
 
-call s:hi('LineNr', s:palette.gray13, s:palette.gray15, 'none')
-call s:hi('FoldColumn', s:palette.gray08, s:palette.gray15, 'none')
+call s:hi('LineNr', s:palette.gray13, s:palette.white, 'none')
+call s:hi('FoldColumn', s:palette.gray08, s:palette.white, 'none')
 call s:hi('CursorLine', [], s:palette.gray15, 'none')
-call s:hi('CursorLineNr', s:palette.gray06, s:palette.gray15, 'none')
+call s:hi('CursorLineNr', s:palette.gray06, s:palette.white, 'none')
+call s:hi('ColorColumn', s:palette.white, s:palette.gray15, 'none')
 
 call s:hi('Visual', s:palette.white, s:palette.gray06, '')
 call s:hi('Search', s:palette.gray15, s:palette.gray03, 'none')
@@ -177,7 +178,6 @@ highlight! link Float Number
 highlight! link Boolean Number
 
 highlight! link SignColumn FoldColumn
-highlight! link ColorColumn FoldColumn
 highlight! link CursorColumn CursorLine
 
 highlight! link Folded LineNr
