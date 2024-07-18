@@ -98,7 +98,6 @@ function! s:hi(group, fg_color, bg_color, style)
     execute join(highlight_command, ' ')
 endfunction
 
-
 call s:hi('Normal', s:palette.gray13, s:palette.black, '')
 set background=dark
 
@@ -127,6 +126,8 @@ if has("nvim") || has("gui_running")
 else
     call s:hi('Comment', s:palette.comments, [], '')
 endif
+
+call s:hi('NormalFloat', [], s:palette.gray02, 'italic')
 
 call s:hi('LineNr', s:palette.gray04, s:palette.black, 'none')
 call s:hi('FoldColumn', s:palette.gray07, s:palette.black, 'none')
