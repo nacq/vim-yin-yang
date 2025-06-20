@@ -161,6 +161,7 @@ call s:hi('Directory', s:palette.gray08, [], '')
 call s:hi('Pmenu', s:palette.gray10, s:palette.gray03, 'none')
 call s:hi('PmenuSbar', s:palette.black, s:palette.gray15, 'none')
 call s:hi('PmenuSel', s:palette.gray03, s:palette.gray10, '')
+call s:hi('PmenuSel', s:palette.black, s:palette.gray12, 'bold')
 call s:hi('PmenuThumb', s:palette.gray03, s:palette.gray09, 'none')
 
 call s:hi('StatusLine', s:palette.gray11, s:palette.gray03, 'none')
